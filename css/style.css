@@ -37,10 +37,154 @@ a {
 /* -------------- */
 /* WHY CHOOSE */
 
+.whychoose__text {
+  text-align: center;
+  margin-bottom: 40px;
+}
 
+.whychoose__text p:first-of-type{
+  color: #dc559b;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.whychoose__text h2 {
+  font-size: 44px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.whychoose__content {
+  display: flex;
+  padding: 40px 10px;
+}
+
+.whychoose__contact {
+  text-align: center;
+  width: 100%;
+  border-radius: 0.5rem;
+  background: #f7f9fc;
+  padding: 40px 30px;
+  margin-right: 20px;
+  transform: translateY(0);
+  transition: all 0.5s;
+}
+
+.whychoose__contact:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 0 20px 0 rgb(34 34 35 / 32%);
+  background: white;
+  text-decoration: none;
+}
+
+.whychoose__contact a h2 {
+  font-size: 1.5rem;
+  padding: 10px 0;
+}
+
+.whychoose__contact a p {
+  color: gray;
+}
+
+.whychoose__contact:hover h2,
+.whychoose__contact:hover p{
+  color: #000;
+}
+
+.whychoose__contact a{
+  text-decoration: none;
+}
 /* WHY CHOOSE */
 /* -------------- */
 /* ABOUT US */
+#aboutUs {
+  padding-top: 70px;
+  background-color: #f7f9fc;
+}
+.aboutUs__text {
+  display: flex;
+
+}
+
+.aboutUs__left {
+  width: 100%;
+}
+
+.aboutUs__left p:first-of-type{
+  color: #dc559b;
+  font-weight: 700;
+}
+
+.aboutUs__left h2 {
+  font-weight: 600;
+  font-size: 34px;
+  padding-bottom: 10px;
+}
+
+.aboutUs__left p:last-of-type{
+  color:gray;
+}
+
+.aboutUs__left .button button {
+  width: 160px;
+  height: 55px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dc4f72;
+  color: white;
+  font-weight: 500;
+  transition: all 0.2s;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.aboutUs__left .button:hover button{
+ background-color: #d62f58;
+ border: #d62f58;
+}
+
+.aboutUs__right img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.aboutUs__number{
+  display: flex;
+}
+
+.number__content {
+  width: 100%;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px 30px;
+  margin: 80px 20px 80px 0;
+  box-shadow: 0 0 20px 0 rgb(215 191 191 / 19%);
+  transition: all 0.3s;
+}
+
+.number__content:hover {
+  box-shadow: 0 0 20px 0 rgb(12 12 19 / 10%);
+
+}
+
+.number__content p:first-of-type{
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 5px;
+  margin-top: 15xpx;
+}
+
+.number__content h2 {
+  color: #dc4f72;
+  font-size: 46px;
+  font-weight: 650;
+  margin-bottom: 10px;
+}
+
+.number__content p:last-of-type{
+  color: gray;
+}
 
 
 /* ABOUT US */
