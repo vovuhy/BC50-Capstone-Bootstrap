@@ -13,7 +13,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-
+        <link href="//fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- slick -->
     <link rel="stylesheet" href="./libs/slick/slick.css">
     <link rel="stylesheet" href="./libs/slick/slick-theme.css">
@@ -25,14 +25,62 @@
 
 <body>
     <!-- header -->
-    <header>
-
+    <header class="fixed-top">
+        <nav class=" navbar  navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand align-items-center" href="index.html">
+                    <i class="fa-regular fa-handshake "></i> <span>Masterwork</span> 
+                </a>
+    
+                <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+                    data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    </span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <ul class="navbar-nav ml-auto align-items-center">
+                        <li class="nav-item active nav__text">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item nav__text">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item nav__text">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item nav__text">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item ml-lg-3 ml-0 mt-lg-0 mt-3">
+                            <a class="btn btn-outline" href="contact.html">Schedule a Demo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+        </nav>
     </header>
     <!-- header -->
 
     <!-- CAROUSEL -->
     <section id="carousel">
-
+        <div class="content">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 content__left">
+                        <h3>We Execute Our Ideas From Start to Finish</h3>
+                        <p class="mt-3 mb-lg-5 mb-4">Building a beautiful interactive business for startups and innovative
+                            companies.</p>
+                        <a href="about.html" class="btn btn-outline">GET STARTED</a>
+                    </div>
+                    <div class="col-lg-6 mt-lg-0 mt-5">
+                        <img src="./img/main.png" class="img-fluid" alt="main image">
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- CAROUSEL -->
 

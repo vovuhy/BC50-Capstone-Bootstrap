@@ -3,15 +3,15 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 16px;
+    font-family: 'Nunito', sans-serif;
 }
 
 :root{
     --whitecolor: #fff;
-}
-
-.container {
-    width: 85%;
-    margin: 0 auto;
+    --bg-color: #F7F9FC;
+    --primary:#dc4f72;
+    --title-color: #2C3038;
+    --text-color: #5a5a5a;
 }
 
 li {
@@ -23,15 +23,127 @@ a {
     color: inherit;
 }
 
+.title h6 {
+  color: var(--primary);
+  text-transform: uppercase;
+}
+
+.title h3 {
+  color: var(--title-color);
+  font-size: 2.8rem;
+  line-height: 1;
+}
+
+.btn-outline {
+  transition: 0.3s ease-out;
+  display: inline-block;
+  line-height: 52px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0px 30px;
+  text-transform: uppercase;
+  color: #dc4f72;
+  border: 1px solid #dc4f72;
+}
+
+.btn-outline:hover {
+  color: var(--whitecolor);
+  background-color: #dc4f72;
+}
 
 
 /* header  */
+header nav {
+  background-color:var(--whitecolor);
+  height: 100%;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+}
 
+
+header .navbar-brand i {
+  color: #dc4f72;
+  font-size: 1.8rem;
+}
+
+header .navbar-brand span{
+  color: #dc4f72;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li.active a {
+  color: #dc4f72;
+}
+
+header nav ul li:hover a {
+  color: #dc4f72;
+}
+
+header nav ul li.nav__text a {
+  position: relative;
+  /* padding: ; */
+}
+header nav ul li.nav__text a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0px;
+  background-color: #dc4f72;
+  bottom: 0;
+  left: 0;
+  transform:translateX(8px) ;
+  transition: all .5s;
+}
+
+header nav ul li.nav__text:hover a::after {
+  width: 25px;
+}
+
+header .navbar-toggler-icon{
+  background-color: #dc4f72;
+  background-size: 150%;
+  color: var(--whitecolor);
+  align-items: center;
+  font-size: 1rem;
+  vertical-align: middle;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 5px;
+  padding: 3px;
+} 
 
 /* header  */
 /* -------------- */
 /* CAROUSEL */
+#carousel { 
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)), url('../img/banner.jpg');
+  background-size: cover;
+  /* background-repeat: no-repeat, no-repeat, no-repeat; */
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 60px;
+  margin-top: 50px;
+}
 
+#carousel img {
+  rotate: 180deg;
+}
+
+#carousel .content__left h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+#carousel .content__left p {
+  padding-right: 150px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
 
 /* CAROUSEL */
 /* -------------- */
