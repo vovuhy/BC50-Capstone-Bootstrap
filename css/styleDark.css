@@ -358,17 +358,8 @@ img {
   background-color: #dc4f72;
 }
 
-<<<<<<< HEAD
 .carousel .content .container .content-thumbnail img {
   transform: rotate(180deg);
-=======
-
-/* header  */
-header nav {
-  background-color: black;
-  height: 100%;
-  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
->>>>>>> aee43fc2b873388e8dd55008d261df72b8c15469
 }
 
 /* CAROUSEL */
@@ -413,7 +404,6 @@ header nav {
   color: white;
 }
 
-<<<<<<< HEAD
 .whychoose__content .container .content-bottom .feature__item {
   padding: 50px 30px;
   border-radius: 10px;
@@ -421,146 +411,21 @@ header nav {
   border: 1px solid #f7f9fc;
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
-=======
-header nav ul li.active a,
-header nav ul li.nav__text:hover a {
-  color: #dc4f72;
-}
-
-header nav ul li.nav__text a {
-  position: relative;
-  /* padding: ; */
-}
-header nav ul li.nav__text a::after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 0px;
-  background-color: #dc4f72;
-  bottom: 0;
-  left: 0;
-  transform:translateX(8px) ;
-  transition: all .5s;
-}
-
-header nav ul li.nav__text:hover a::after {
-  width: 25px;
-}
-
-header .navbar-toggler-icon{
-  background-color: #dc4f72;
-  background-size: 150%;
-  color: var(--whitecolor);
-  align-items: center;
-  font-size: 1rem;
-  vertical-align: middle;
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 5px;
-  padding: 3px;
-} 
-.btn-outline:hover {
-  border: 1px solid #dc4f72;
-}
-
-/* header  */
-/* -------------- */
-/* CAROUSEL */
-#carousel { 
-  background: linear-gradient(to right, #1a2629, rgba(255, 255, 255, 0.92)), url(https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/banner.jpg);
-  background-size: cover;
-  /* background-repeat: no-repeat, no-repeat, no-repeat; */
-  background-position: center;
-  background-attachment: fixed;
-  padding-top: 60px;
-  margin-top: 50px;
-}
-
-#carousel img {
-  rotate: 180deg;
-}
-
-#carousel .content__left h3 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: white;
-
-}
-
-#carousel .content__left p {
-  padding-right: 150px;
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #b3b1b1;
-}
-
-/* CAROUSEL */
-/* -------------- */
-/* WHY CHOOSE */
-#whyChoose  {
-  background-color: black;
-  padding-top: 40px;
-}
-
-.whychoose__text {
-  text-align: center;
-  margin-bottom: 40px;
-  padding: 0 190px;
-}
-
-.whychoose__text p:first-of-type {
-  color: #dc559b;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 6px;
-}
-
-.whychoose__text h2 {
-  color: white;
-  font-size: 44px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.whychoose__text p:last-of-type{
-  color: #92989a;
-}
-
-.whychoose__content {
-  display: flex;
-  padding: 40px 10px;
-}
-
-.whychoose__contact {
-  text-align: center;
-  width: 100%;
-  border-radius: 0.5rem;
-  background: #191c1d;
-  padding: 40px 30px;
-  margin-right: 20px;
-  transform: translateY(0);
->>>>>>> aee43fc2b873388e8dd55008d261df72b8c15469
   transition: all 0.5s;
 }
 
 .whychoose__content .container .content-bottom .feature__item:hover {
   transform: translateY(-15px);
-<<<<<<< HEAD
   background: #131617;
   border: 1px solid #eee;
   transition: all 0.5s;
 }
 
 .whychoose__content .container .content-bottom .feature__item a {
-=======
-  box-shadow: 0 0 20px 0 rgb(34 34 35 / 32%);
-  background-color: rgb(10, 10, 10);
->>>>>>> aee43fc2b873388e8dd55008d261df72b8c15469
   text-decoration: none;
   border: 1px solid rgb(75, 71, 71);
 }
 
-<<<<<<< HEAD
 .whychoose__content .container .content-bottom .feature__item a .name {
   font-size: 23px;
   font-weight: bold;
@@ -580,30 +445,6 @@ header .navbar-toggler-icon{
   margin-top: 8px;
   padding: 60px 0;
   background-color: var(--bg-color);
-=======
-.whychoose__contact a h2 {
-  font-size: 1.5rem;
-  padding: 10px 0;
-  color: white;
-}
-
-.whychoose__contact a p {
-  color: #92989a;
-}
-
-
-
-.whychoose__contact a {
-  text-decoration: none;
-}
-
-/* WHY CHOOSE */
-/* -------------- */
-/* ABOUT US */
-#aboutUs {
-  padding-top: 70px;
-  background-color: #0c0c0c;
->>>>>>> aee43fc2b873388e8dd55008d261df72b8c15469
 }
 
 .about_company .container {
@@ -628,7 +469,6 @@ header .navbar-toggler-icon{
   margin: 10px 0 25px 0;
 }
 
-<<<<<<< HEAD
 .about_company .container .info-left .description {
   font-size: 16px;
   font-weight: 400;
@@ -637,24 +477,6 @@ header .navbar-toggler-icon{
 }
 
 .about_company .container .info-left .read-more {
-=======
-.aboutUs__left h2 {
-  font-weight: 600;
-  font-size: 34px;
-  padding-bottom: 10px;
-  color: white;
-}
-
-.aboutUs__left p:last-of-type {
-  color: #92989a;
-}
-
-.aboutUs__left .button button {
-  width: 160px;
-  height: 55px;
-  border: none;
-  border-radius: 5px;
->>>>>>> aee43fc2b873388e8dd55008d261df72b8c15469
   background-color: #dc4f72;
   color: #fff;
   border-color: #dc4f72;
@@ -684,21 +506,10 @@ header .navbar-toggler-icon{
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-<<<<<<< HEAD
 /*COUNT-UP*/
 .counter__content {
   padding: 60px 0;
   background-color: var(--bg-color);
-=======
-.number__content {
-  width: 100%;
-  border-radius: 5px;
-  background-color: rgb(12, 12, 12);
-  padding: 20px 30px;
-  margin: 80px 20px 80px 0;
-  border: 1px solid rgb(46, 45, 45);
-  transition: all 0.3s;
->>>>>>> aee43fc2b873388e8dd55008d261df72b8c15469
 }
 
 .counter__content .container {
@@ -709,7 +520,6 @@ header .navbar-toggler-icon{
   margin-left: auto;
 }
 
-<<<<<<< HEAD
 .counter__content .container .counter_item {
   padding: 30px 30px;
   border-radius: 10px;
@@ -718,14 +528,6 @@ header .navbar-toggler-icon{
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
   transition: all 0.5s;
-=======
-.number__content p:first-of-type {
-  font-weight: 600;
-  font-size: 18px;
-  margin-bottom: 5px;
-  margin-top: 15px;
-  color: white;
->>>>>>> aee43fc2b873388e8dd55008d261df72b8c15469
 }
 
 .counter__content .container .counter_item .title_counter {
@@ -741,15 +543,10 @@ header .navbar-toggler-icon{
   margin-top: 10px;
 }
 
-<<<<<<< HEAD
 .counter__content .container .counter_item .desc_counter {
   font-size: 16px;
   color: var(--text-color);  
   font-weight: 400;
-=======
-.number__content p:last-of-type {
-  color: #92989a;
->>>>>>> aee43fc2b873388e8dd55008d261df72b8c15469
 }
 /* ABOUT US */
 /* -------------- */
