@@ -8,204 +8,222 @@
     <link rel="icon" type="image/png" href="./img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="//fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- slick -->
-    <link rel="stylesheet" href="./libs/slick/slick.css">
-    <link rel="stylesheet" href="./libs/slick/slick-theme.css">
-    <title>BC50 Capstone Bootstrap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="./libs/OwlCarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./libs/OwlCarousel/css/owl.theme.default.min.css">
+    <title>Home</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <!-- header -->
-    <header class="fixed-top">
-        <nav class=" navbar  navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand align-items-center" href="index.html">
-                    <i class="fa-regular fa-handshake "></i> <span>Masterwork</span> 
-                </a>
-    
-                <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
-                    data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-                    </span>
-                </button>
-    
-                <div class="collapse navbar-collapse" id="navbarToggler">
-                    <ul class="navbar-nav ml-auto align-items-center">
-                        <li class="nav-item active nav__text">
-                            <a class="nav-link" href="index.html">Home</a>
+    <!-- HEADER -->
+    <header id="header" class="bg-white">
+        <nav class="navbar navbar-expand-lg navigation bg-white">
+            <div class="container-fluid text-center">
+            <h1>
+              <a id="logo" class="navbar-brand logo" href="index.html">
+                <span class="fa fa-handshake"></span>
+                Masterwork
+              </a>
+            </h1>
+            <button class="navbar-toggler" id="toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="navbar-toggler-icon open-close"></i>
+            </button>
+                <div class="collapse navbar-collapse menu" id="navbarNav">
+                    <ul class="navbar-nav ms-md-auto gap-2 list">
+                        <li class="nav-item rounded home px-2">
+                        <a class="nav-link" style="color: #DC4F72;" aria-current="page" href="index.html"></i>Home</a>
                         </li>
-                        <li class="nav-item nav__text">
-                            <a class="nav-link" href="about.html">About</a>
+                        <li class="nav-item rounded about px-2">
+                        <a class="nav-link" href="about.html"></i>About</a>
                         </li>
-                        <li class="nav-item nav__text">
-                            <a class="nav-link" href="services.html">Services</a>
+                        <li class="nav-item rounded service px-2">
+                        <a class="nav-link" href="service.html"></i>Services</a>
                         </li>
-                        <li class="nav-item nav__text">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                        <li class="nav-item dropdown page">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pages
+                            <i class="fa fa-angle-down fs-6"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="solutions.html">solutions posts</a></li>
+                            <li><a class="dropdown-item" href="solutions-single.html">solutions single</a></li>
+                            <li><a class="dropdown-item" href="landing-single.html">Landing page</a></li>
+                        </ul>
                         </li>
-                        <li class="nav-item ml-lg-3 ml-0 mt-lg-0 mt-3">
-                            <a class="btn btn-outline" href="contact.html">Schedule a Demo</a>
+                        <li class="nav-item rounded contact px-2">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item ml-lg-3 px-2 ml-0 mt-lg-0 mt-3 schedule">
+                        <a class="btn btn-outline-primary theme-button button-schedule" href="contact.html">Schedule a Demo</a>
                         </li>
                     </ul>
                 </div>
             </div>
-    
         </nav>
     </header>
-    <!-- header -->
+    <!-- HEADER -->
 
     <!-- CAROUSEL -->
-    <section id="carousel">
+    <section class="carousel">
         <div class="content">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 content__left">
-                        <h3>We Execute Our Ideas From Start to Finish</h3>
-                        <p class="mt-3 mb-lg-5 mb-4">Building a beautiful interactive business for startups and innovative
-                            companies.</p>
-                        <a href="about.html" class="btn btn-outline">GET STARTED</a>
-                    </div>
-                    <div class="col-lg-6 mt-lg-0 mt-5">
-                        <img src="./img/main.png" class="img-fluid" alt="main image">
-                    </div>
-                </div>
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6 content-left">
+                <h3 class="title">
+                  We Execute Our Ideas
+                  From Start to Finish
+                </h3>
+                <p class="mt-3 mb-lg-5 mb-4 desc">Building a beautiful interactive business for startups and innovative
+                  companies.</p>
+                <a href="about.html" class="btn btn-outline-primary link-about">Get Started</a>
+              </div>
+              <div class="col-lg-6 content-thumbnail mt-lg-0 mt-5">
+                <img src="./img/main.png" class="img-fluid" alt="banner">
+              </div>
             </div>
+          </div>
         </div>
     </section>
     <!-- CAROUSEL -->
 
     <!-- WHY CHOOSE -->
-    <section id="whyChoose">
+    <section class="whychoose__content">
         <div class="container">
-            <div class="whychoose__text">
-                <p>WHY CHOOSE US</p>
-                <h2>Tools for business startup to professional</h2>
-                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+          <div class="content-top text-center">
+            <span class="sub-title">Why Choose Us</span>
+            <h2 class="title">Tools for business startup to professional</h3>
+              <p class="description">
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                Nulla mollis dapibus nunc, ut rhoncus
+                turpis sodales quis. Integer sit amet mattis quam.
+              </p>
+          </div>
+          <div class="content-bottom text-center">
+            <div class="row">
+              <div class="col-12 col-md-4 mb-5-md-0 mb-md-0 mt-5">
+                <div class="feature__item">
+                  <a href="service.html" class="d-block">
+                    <img src="./img/s1.png" alt="" class="img-fluid">
+                    <h3 class="name">Interactive</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum perspiciatis?</p>
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 mb-5-md-0 mb-md-0 mt-5">
+                <div class="feature__item">
+                  <a href="service.html" class="d-block">
+                    <img src="./img/s2.png" alt="" class="img-fluid">
+                    <h3 class="name">Business</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum perspiciatis?</p>
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 mb-5-md-0 mb-md-0 mt-5">
+                <div class="feature__item">
+                  <a href="service.html" class="d-block">
+                    <img src="./img/s3.png" alt="" class="img-fluid">
+                    <h3 class="name">Inspiration</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum perspiciatis?</p>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="whychoose__content">
-                <div class="whychoose__contact">
-                    <a href="">
-                        <img src="./img/s1.png" alt="">
-                        <h2>Interactive</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur </br>adipisicing elit. Laudantium tempora </br>rerum
-                            perspiciatis?
-                        </p>
-                    </a>
-                </div>
-                <div class="whychoose__contact">
-                    <a href="">
-                        <img src="./img/s2.png" alt="">
-                        <h2>Business</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur </br>adipisicing elit. Laudantium tempora </br>rerum
-                            perspiciatis?
-                        </p>
-                    </a>
-                </div>
-                <div class="whychoose__contact">
-                    <a href="">
-                        <img src="./img/s3.png" alt="">
-                        <h2>Inspiration</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur </br>adipisicing elit. Laudantium tempora </br>rerum
-                            perspiciatis?
-                        </p>
-                    </a>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
-    <!-- WHY CHOOSE -->
-
-    <!-- ABOUT US -->
-    <section id="aboutUs">
+      </section>
+      <!-- ABOUT US -->
+      <section class="about_company">
         <div class="container">
-            <div class="aboutUs__text">
-                <div class="aboutUs__left">
-                    <p>ABOUT OUR COMPANY</p>
-                    <h2>The Best Choice For Your Successful Business!</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est repellendus illum harumquam nihil totam reprehenderit! Ut sed eveniet quos! Asperiores officia, repudiandae similique reiciendis, ab est magnam esse nesciunt ea fuga facere voluptatem.</p>
-                    <div class="button">
-                        <button>READ MORE</button>
-                    </div>
-                </div>
-                <div class="aboutUs__right">
-                    <img src="./img/about.jpg" alt="">
-                </div>
+          <div class="row align-items-center">
+            <div class="col-lg-6 info-left">
+              <span class="sub-title">ABOUT OUR COMPANY</span>
+              <h2 class="title">The Best Choice For Your Successful Business!</h3>
+                <p class="description">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est repellendus illum harum quam nihil
+                  totam
+                  reprehenderit! Ut sed eveniet quos! Asperiores officia, repudiandae similique reiciendis, ab est magnam
+                  esse nesciunt ea fuga facere
+                  voluptatem.
+                </p>
+                <a href="#" class="btn btn-primary read-more">Read More</a>
             </div>
-            <div class="aboutUs__number countUp">
-                <div class="number__content">
-                    <p>Happy Customer</p>
-                    <h2 class="number_up">10458</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur </br>adipisicing elit. Facere atque sed.</p>
-                </div>
-                <div class="number__content">
-                    <p>Winning Awards</p>
-                    <h2 class="number_up">890</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur </br>adipisicing elit. Facere atque sed.</p>
-                </div>
-                <div class="number__content">
-                    <p>Completed Projects</p>
-                    <h2 class="number_up">5345</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur </br>adipisicing elit. Facere atque sed.</p>
-                </div>
+            <div class="col-lg-6 pl-lg-5 mt-lg-0 mt-5 thumbnail-right">
+              <img src="./img/about.jpg" alt="about">
             </div>
+          </div>
         </div>
-    </section>
-    <!-- ABOUT US -->
-
+      </section>
+      <section class="counter__content">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 mb-5-md-0 mb-md-0 mt-3">
+              <div class="counter_item">
+                <h3 class="title_counter">Happy Customers</h3>
+                <p class="counter">10458</p>
+                <p class="desc_counter">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5-md-0 mb-md-0 mt-3">
+              <div class="counter_item">
+                <h3 class="title_counter">Winning Awards</h3>
+                <p class="counter">890</p>
+                <p class="desc_counter">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5-md-0 mb-md-0 mt-3">
+              <div class="counter_item">
+                <h3 class="title_counter">Completed Projects</h3>
+                <p class="counter">5345</p>
+                <p class="desc_counter">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     <!-- INTRODUCE -->
-    <section id="commit" class="commit__content">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 commit__left text-white">
-                    <h3 class="title">
-                        We are true to ourselves, and commit to always perform at our best.
-                    </h3>
-                    <p class="mt-md-4 mt-3 mb-md-5 mb-4 desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Necessitatibus, doloribus atque. Corrupti exercitationem
-                        voluptatem ipsum iste consequuntur et vitae
-                        voluptas temporibus? Maxime dolores amet voluptatum illo
-                        consequatur placeat fugit ducimus.
-                    </p>
-                    <a href="#url" class="btn btn-secondary btn-redirect">Read more</a>
-                </div>
-                <div class="col-lg-6 commit__right mt-lg-0 mt-5">
-                </div>
-            </div>
+    <section class="introduce__content">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 introduce-left text-white">
+            <h3 class="title">
+              We are true to ourselves, and commit to always perform at our best.
+            </h3>
+            <p class="mt-md-4 mt-3 mb-md-5 mb-4 desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus, doloribus atque. Corrupti exercitationem voluptatem ipsum iste consequuntur et vitae
+              voluptas temporibus? Maxime dolores amet voluptatum illo consequatur placeat fugit ducimus.</p>
+            <a href="about.html" class="btn btn-outline-primary btn-redirect">Read more</a>
+          </div>
+          <div class="col-lg-6 introduce-right mt-lg-0 mt-5">
+          </div>
         </div>
+      </div>
     </section>
-    <!-- INTRODUCE -->
-
-    <!-- BLOG -->
-    <section id="blog" class="blog">
+    <!-- SOLUTIONS -->
+    <section id="solutions" class="solutions">
         <div class="container">
-            <div class="blog__top text-center">
+            <div class="solutions__top text-center">
               <span class="sub-title">We are here for you</span>
-              <h2 class="title">Explore blog</h3>
+              <h2 class="title">Explore solutions</h3>
                 <p class="description">
                   Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
                   Nulla mollis dapibus nunc, ut rhoncus
                   turpis sodales quis. Integer sit amet mattis quam.
                 </p>
             </div>
-            <div class="blog__bottom">
+            <div class="solutions__bottom">
             <div class="row">
                 <div class="col-12 col-md-4 mb-5-md-0 mb-md-0 mt-5">
                     <div class="card">
-                        <img src="./img/b1.jpg" class="card-img-top" alt="blog-b1">
+                        <img src="./img/b1.jpg" class="card-img-top" alt="solutions-b1">
                         <p class="date">26 Jan, 2020</p>
     
                         <div class="card-body">
-                        <div class="blog-info">
+                        <div class="solutions-info">
                         <label class="tag-label red">Business</label>
                         <h5 class="card-title">Corporate, Business & Digital Agency</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet nostrum ad minus libero 
@@ -221,11 +239,11 @@
                 </div>
                 <div class="col-12 col-md-4 mb-5-md-0 mb-md-0 mt-5">
                     <div class="card">
-                        <img src="./img/b7.jpg" class="card-img-top" alt="blog-b7">
+                        <img src="./img/b7.jpg" class="card-img-top" alt="solutions-b7">
                         <p class="date">15 Apr, 2020</p>
     
                     <div class="card-body">
-                        <div class="blog-info">
+                        <div class="solutions-info">
                         <label class="tag-label green">Design</label>
                         <h5 class="card-title">Corporate, Business & Digital Agency</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet nostrum ad minus libero 
@@ -241,11 +259,11 @@
                 </div>
                 <div class="col-12 col-md-4 mb-5-md-0 mb-md-0 mt-5">
                     <div class="card">
-                        <img src="./img/b3.jpg" class="card-img-top" alt="blog-b3">
+                        <img src="./img/b3.jpg" class="card-img-top" alt="solutions-b3">
                         <p class="date">25 Jun, 2020</p>
     
                     <div class="card-body">
-                        <div class="blog-info">
+                        <div class="solutions-info">
                         <label class="tag-label blue">Industry</label>
                         <h5 class="card-title">Corporate, Business & Digital Agency</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet nostrum ad minus libero 
@@ -263,12 +281,102 @@
             </div>
         </div>
     </section>
-    <!-- BLOG -->
-
+    <!-- solutions -->
     <!-- QA -->
-    <section id="qa">
-
-    </section>
+    <section class="qa__content">
+        <div class="container py-lg-5">
+          <div class="faq-top text-center">
+            <span class="sub-title">Questions and Answers</span>
+            <h2 class="title">General FAQs</h3>
+              <p class="description">
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                Nulla mollis dapibus nunc, ut rhoncus
+                turpis sodales quis. Integer sit amet mattis quam.
+              </p>
+          </div>
+          <div class="faq-bottom mt-5">
+            <div class="row">
+              <div class="col-lg-5 faq-left mt-lg-0 mt-5">
+                <img src="./img/women.jpg" alt="women">
+              </div>
+              <div class="col-lg-7 ps-lg-5 faq-right">
+                <div class="faq-container">
+                  <div class="faq-item">
+                    <h4 class="faq-title">There are many passages but the majority?</h4>
+                    <p class="faq-text">
+                      Voluptates amet earum velit nobis aliquam
+                      laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis
+                      sapiente
+                      non assumenda, incidunt officiis eaque iste minima autem.
+                    </p>
+                    <button class="faq-toggle">
+                      <i class="fas fa-chevron-down transfer"></i>
+                    </button>
+                  </div>
+                  <div class="faq-item">
+                    <h4 class="faq-title">Sed ut perspiciatis unde omnis?</h4>
+                    <p class="faq-text">
+                      Sit amet consectetur adipisicing elit. Voluptates amet earum velit nobis aliquam
+                      laboriosam nihil debitis animi vitae eos nisi laudantium. Tempore reiciendis ipsam culpa, qui
+                      voluptates eveniet, incidunt officiis eaque iste minima autem.
+                    </p>
+                    <button class="faq-toggle">
+                      <i class="fas fa-chevron-down transfer"></i>
+                    </button>
+                  </div>
+                  <div class="faq-item">
+                    <h4 class="faq-title">At vero eos iusto odio ducimus qui?</h4>
+                    <p class="faq-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates amet earum velit nobis aliquam
+                      laboriosam nihil quasi fuga, ad corrupti libero omnis sapiente
+                      non assumenda excepturi aperiam animi vitae eos nisi laudantium. Tempore reiciendis ipsam culpa, qui
+                      voluptates eveniet, incidunt officiis eaque iste minima autem.
+                    </p>
+                    <button class="faq-toggle">
+                      <i class="fas fa-chevron-down transfer"></i>
+                    </button>
+                  </div>
+                  <div class="faq-item">
+                    <h4 class="faq-title">We denounce with righteous?</h4>
+                    <p class="faq-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates amet earum velit nobis aliquam
+                      laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis
+                      sapiente
+                      non assumenda excepturi aperiam iste minima autem.
+                    </p>
+                    <button class="faq-toggle">
+                      <i class="fas fa-chevron-down transfer"></i>
+                    </button>
+                  </div>
+                  <div class="faq-item">
+                    <h4 class="faq-title">perspiciatis unde omnis?</h4>
+                    <p class="faq-text">
+                      Sit amet consectetur adipisicing elit. Voluptates amet earum velit nobis aliquam
+                      laboriosam nihil debitis animi vitae eos nisi laudantium. Tempore reiciendis ipsam culpa, qui
+                      voluptates eveniet, incidunt officiis eaque iste minima autem.
+                    </p>
+                    <button class="faq-toggle">
+                      <i class="fas fa-chevron-down transfer"></i>
+                    </button>
+                  </div>
+                  <div class="faq-item">
+                    <h4 class="faq-title">At vero eos iusto odio ducimus qui?</h4>
+                    <p class="faq-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates amet earum velit nobis aliquam
+                      laboriosam nihil quasi fuga, ad corrupti libero omnis sapiente
+                      non assumenda excepturi aperiam animi vitae eos nisi laudantium. Tempore reiciendis ipsam culpa, qui
+                      voluptates eveniet, incidunt officiis eaque iste minima autem.
+                    </p>
+                    <button class="faq-toggle">
+                      <i class="fas fa-chevron-down transfer"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     <!-- QA -->
 
     <!-- PROJECTS -->
@@ -310,7 +418,7 @@
                                     <p class="mt-md-4 mt-3 mb-md-5 mb-4 desc">Lorem ipsum dolor sit, adipisicing elit repudiandae
                                     perferendis dolores praesentium nulla quibusdam repellendus. consequatur minus aliquam corrupti
                                     blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit pariatur.</p>
-                                    <a href="#url" class="btn btn-outline-primary btn-redirect">Read more</a>
+                                    <a href="#url" class="btn btn-outline-primary btn-redirect">Know more</a>
                                 </div>
                                 <div class="col-lg-6 tabContent-right mt-lg-2 mt-5">
                                     <img src="./img/b4.jpg" alt="img_tabcontent">
@@ -329,7 +437,7 @@
                                     <p class="mt-md-4 mt-3 mb-md-5 mb-4 desc">Lorem ipsum dolor sit, adipisicing elit repudiandae
                                     perferendis dolores praesentium nulla quibusdam repellendus. consequatur minus aliquam corrupti
                                     blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit pariatur.</p>
-                                    <a href="#url" class="btn btn-outline-primary btn-redirect">Read more</a>
+                                    <a href="#url" class="btn btn-outline-primary btn-redirect">Know more</a>
                                 </div>
                             </div>
                         </div>
@@ -342,7 +450,7 @@
                                     <p class="mt-md-4 mt-3 mb-md-5 mb-4 desc">Lorem ipsum dolor sit, adipisicing elit repudiandae
                                     perferendis dolores praesentium nulla quibusdam repellendus. consequatur minus aliquam corrupti
                                     blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit pariatur.</p>
-                                    <a href="#url" class="btn btn-outline-primary btn-redirect">Read more</a>
+                                    <a href="#url" class="btn btn-outline-primary btn-redirect">Know more</a>
                                 </div>
                                 <div class="col-lg-6 tabContent-right mt-lg-2 mt-5">
                                     <img src="./img/b6.jpg" alt="img_tabcontent3">
@@ -356,170 +464,198 @@
         </div>
     </section>
     <!-- PROJECTS -->
-
-    <!-- COMMENT  -->
-    <section id="comment">
-        <div class="comment">
-            <div class="container">
-                <div class="comment__title">
-                    <p>OUR CLIENT TESTIMONIALS</p>
-                    <h2>What People Say</h2>
-                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam</p>
-                </div>
-                <div class="comment__cont">
-                    <div class="comment__content">
-                        <div class="comment__contact">
-                            <div class="comment__img">
-                                <img src="./img/team3.jpg" alt="">
-                            </div>
-                            <div class="comment__text">
-                                <span class="fa-solid fa-quote-left"></span>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti
-                                    praesentium doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus
-                                    quam
-                                    obcaecati sapiente quaerat et.</p>
-                                <div class="isabella">
-                                    <h3>Isabella Mia</h3>
-                                    <p>Company name</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comment__contact">
-                            <div class="comment__img">
-                                <img src="./img/team4.jpg" alt="">
-                            </div>
-                            <div class="comment__text">
-                                <span class="fa-solid fa-quote-left"></span>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti
-                                    praesentium doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus
-                                    quam
-                                    obcaecati sapiente quaerat et.</p>
-                                <div class="isabella">
-                                    <h3>Benjamin Lucas</h3>
-                                    <p>Company name</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comment__contact">
-                            <div class="comment__img">
-                                <img src="./img/team5.jpg" alt="">
-                            </div>
-                            <div class="comment__text">
-                                <span class="fa-solid fa-quote-left"></span>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti
-                                    praesentium doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam
-                                    obcaecati sapiente quaerat et.</p>
-                                <div class="isabella">
-                                    <h3>Oliver Bradley</h3>
-                                    <p>Company name</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comment__contact">
-                            <div class="comment__img">
-                                <img src="./img/team6.jpg" alt="">
-                            </div>
-                            <div class="comment__text">
-                                <span class="fa-solid fa-quote-left"></span>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti
-                                    praesentium doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam
-                                    obcaecati sapiente quaerat et.</p>
-                                <div class="isabella">
-                                    <h3>William James</h3>
-                                    <p>Company name</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-    <!-- COMMENT  -->
-
-    <!-- GET STARTED -->
-    <section id="getStarted">
+    <!-- CLIENS -->
+    <section class="comment__content">
         <div class="container">
-            <div class="getStarted__text">
-                <h2>Ready to build your own brand community?</h2>
-                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
-            </div>
-            <div class="getStarted__button">
-                <a href=""><button class="button__op">BOOK A DEMO</button></a>
-                <a href=""><button class="button__col">GET STARTED</button></a>
-            </div>
-        </div>
-    </section>
-    <!-- GET STARTED -->
-
-    <!-- FOOTER -->
-    <footer id="footer">
-        <div class="container">
-            <div class="footer__service">
-                <div class="service__left">
-                    <div class="service">
-                        <h2>Company</h2>
-                        <ul>
-                            <li><a href=""></a>Home</li>
-                            <li><a href=""></a>About Us</li>
-                            <li><a href=""></a>Services</li>
-                            <li><a href=""></a>Blog</li>
-                            <li><a href=""></a>Contact Us</li>
-                        </ul>
+          <div class="comment__content-top text-center">
+            <span class="sub-title">OUR CLIENTS TESTIMONIALS</span>
+            <h2 class="title">What People Say</h3>
+              <p class="description">
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis
+                dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.
+              </p>
+          </div>
+          <div class="comment__content-bottom mt-5">
+            <div class="row">
+              <div id="owl-carousel" class="owl-carousel owl-theme carousel-homepage">
+                <div class="item">
+                  <div class="slider-info mt-lg-4 mt-3">
+                    <div class="img-circle">
+                      <img src="./img/team3.jpg" alt="comment__content-img" class="img-fluid comment__content-img">
                     </div>
-                    <div class="service">
-                        <h2>Useful Links</h2>
-                        <ul>
-                            <li><a href=""></a>Case Studies</li>
-                            <li><a href=""></a>Our Branches</li>
-                            <li><a href=""></a>Latest Media</li>
-                            <li><a href=""></a>About Company</li>
-                            <li><a href=""></a>Our People</li>
-                        </ul>
-                    </div>
-                    <div class="service">
-                        <h2>Our Services</h2>
-                        <ul>
-                            <li><a href=""></a>Privacy Policy</li>
-                            <li><a href=""></a>Our Terms</li>
-                            <li><a href=""></a>Services</li>
-                            <li><a href=""></a>Landing Page</li>
-                            <li><a href=""></a>Our People</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="service__right">
-                    <div class="service__right__text">
-                        <h2>Newsletter</h2>
-                    </div>
-                    <div class="service__right__address">
-                        <h2>Get latest updates and offers.</h2>
-                        <form>
-                            <input type="text" name id placeholder="Email Address">
-                            <button>Go</button>
-                        </form>
-                        <p>Sign up for our latest news & articles. We won’t give you spam mails.</p>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="footer__masterwork">
-                <div class="masterwork__content">
-                    <div class="masterwork__left">
-                        <p>&copy; 2020 Masterwork. All rights reserved | Designed by <a href="https://w3layouts.com/">W3Layouts</a>
-                        </p>
+                    <div class="message">
+                      <span class="fa fa-quote-left" aria-hidden="true"></span>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium
+                        doloremque. Repellendus soluta quos nemo
+                        quisquam consectetur temporibus quam obcaecati sapiente quaerat et.
+                      </p>
+                      <div class="name mt-4">
+                        <h4>Isabella Mia</h4>
+                        <p>Company name</p>
                       </div>
-                    <div class="masterwork__right">
-                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href=""><i class="fa-brands fa-twitter"></i></a>
-                        <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
-                        <a href=""><i class="fa-brands fa-github"></i></a>
                     </div>
+                  </div>
                 </div>
+                <div class="item">
+                  <div class="slider-info mt-lg-4 mt-3">
+                    <div class="img-circle">
+                      <img src="./img/team4.jpg" alt="comment__content-img" class="img-fluid comment__content-img">
+                    </div>
+                    <div class="message">
+                      <span class="fa fa-quote-left" aria-hidden="true"></span>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium
+                        doloremque. Repellendus soluta quos nemo
+                        quisquam consectetur temporibus quam obcaecati sapiente quaerat et.
+                      </p>
+                      <div class="name mt-4">
+                        <h4>Benjamin Lucas</h4>
+                        <p>Company name</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="slider-info mt-lg-4 mt-3">
+                    <div class="img-circle">
+                      <img src="./img/team5.jpg" alt="comment__content-img" class="img-fluid comment__content-img">
+                    </div>
+                    <div class="message">
+                      <span class="fa fa-quote-left" aria-hidden="true"></span>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium
+                        doloremque. Repellendus soluta quos nemo
+                        quisquam consectetur temporibus quam obcaecati sapiente quaerat et.
+                      </p>
+                      <div class="name mt-4">
+                        <h4>Oliver Bradley</h4>
+                        <p>Company name</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="slider-info mt-lg-4 mt-3">
+                    <div class="img-circle">
+                      <img src="./img/team6.jpg" alt="comment__content-img" class="img-fluid comment__content-img">
+                    </div>
+                    <div class="message">
+                      <span class="fa fa-quote-left" aria-hidden="true"></span>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium
+                        doloremque. Repellendus soluta quos nemo
+                        quisquam consectetur temporibus quam obcaecati sapiente quaerat et.
+                      </p>
+                      <div class="name mt-4">
+                        <h4>William James</h4>
+                        <p>Company name</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </section>
+      <section class="ready__content">
+        <div class="container">
+          <div class="ready__content-top text-center">
+            <h2 class="title">Ready to build your own brand community?</h3>
+              <p class="description">
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis
+                dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.
+              </p>
+          </div>
+          <div class="ready__content-bottom mt-5 text-center">
+            <a href="contact.html" class="btn btn-outline-primary btn-contact left">Book a demo</a>
+            <a href="contact.html" class="btn btn-outline-primary btn-contact right">Get started</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="container-fluid">
+        <div class="wrapper">
+          <div class="row main-row">
+            <section class="col-lg-2 col-md-6 col-sm-12 column">
+              <div class="footer-heading">
+                <h3>Company</h3>
+              </div>
+              <div class="footer-body">
+                <ul>
+                  <li>Home</li>
+                  <li>About Us</li>
+                  <li>Services</li>
+                  <li>solutions</li>
+                  <li>Contact Us</li>
+                </ul>
+              </div>
+            </section>
+            <section class="col-lg-2 col-md-6 col-sm-12 column">
+              <div class="footer-heading">
+                <h3>Useful Links</h3>
+              </div>
+              <div class="footer-body">
+                <ul>
+                  <li>Case Studies</li>
+                  <li>Our Branches</li>
+                  <li>Latest Media</li>
+                  <li>About Company</li>
+                  <li>Our People</li>
+                </ul>
+              </div>
+            </section>
+            <section class="col-lg-2 col-md-6 col-sm-12 column">
+              <div class="footer-heading">
+                <h3>Our Services</h3>
+              </div>
+              <div class="footer-body">
+                <ul>
+                  <li>Privacy Policy</li>
+                  <li>Our Terms</li>
+                  <li>Services</li>
+                  <li>Landing Page</li>
+                  <li>Our People</li>
+                </ul>
+              </div>
+            </section>
+            <section class="col-lg-5 col-md-6 col-sm-12 column form-handle">
+              <div class="footer-heading">
+                <h3>Newsletter</h3>
+              </div>
+              <div class="footer-body">
+                <div class="end-column">
+                  <h4>Get latest updates and offers.</h4>
+                  <form action="#" class="subscribe" method="post">
+                    <input type="email" name="email" placeholder="Email Address" required="">
+                    <button type="submit">Go</button>
+                  </form>
+                  <p>Sign up for our latest news &amp; articles. We won't give you spam mails.</p>
+                </div>
+              </div>
+            </section>
+          </div>
+          <hr class="row-barrier" style="opacity: 0.1;">
+          <div class="copyright mt-4">
+            <div class="columns text-lg-left text-center">
+              <p>© 2020 Masterwork. All rights reserved | Designed by <a href="https://w3layouts.com/">W3Layouts</a></p>
+            </div>
+            <div class="columns-2 mt-lg-0 mt-3">
+              <ul class="social">
+                <li><a href="#facebook"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li><a href="#linkedin"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li><a href="#twitter"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li><a href="#google"><i class="fab fa-google-plus-g"></i></a>
+                </li>
+                <li><a href="#github"><i class="fab fa-github"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- FOOTER -->
 
@@ -529,48 +665,20 @@
     </button>
     <!-- BACK TO TOP -->
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
-        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
-        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+    crossorigin="anonymous"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="./libs/slick/slick.min.js"></script>
-    <script src="./libs/countup/jquery.countup.min.js"></script>
+    <script src="./libs/OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script src="./libs/countup/jquery.waypoints.min.js"></script>
+    <script src="./libs/countup/jquery.countup.js"></script>
+    <script src="./libs/index.js"></script>
     <script>
-        $('.number_up').countUp();
-
-    </script>
-    <script>
-        $('.comment__content').slick({
-            infinite: true,
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            arrows: false,
-            // arrow = 2 dấu sẹc kéo ngang 
-           dots: true
-            // dots = các dấu chấm nằm dưới chọn kéo ngang
-            // autoplay: true,
-            // autoplay = tự nhảy 
-        });
-    </script>
-    <script>
-        window.onscroll = function () { scrollFunction() };
+      window.onscroll = function () { scrollFunction() };
     
         function scrollFunction() {
           if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
@@ -585,7 +693,7 @@
           document.body.scrollTop = 0;
           document.documentElement.scrollTop = 0;
         }
-      </script>
+    </script>
     <script src="./libs/backToTop/util.js"></script>
     <script src="./libs/backToTop/main.js"></script>
     
