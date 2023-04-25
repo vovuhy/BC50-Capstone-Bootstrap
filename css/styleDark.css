@@ -54,7 +54,7 @@ a {
 
 /* header  */
 header nav {
-  background-color:var(--whitecolor);
+  background-color: black;
   height: 100%;
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
 }
@@ -73,6 +73,9 @@ header .navbar-brand span{
 
 header nav ul li {
   margin: 0 10px;
+}
+.nav-link {
+  color: white;
 }
 
 header nav ul li.active a,
@@ -112,12 +115,15 @@ header .navbar-toggler-icon{
   border-radius: 5px;
   padding: 3px;
 } 
+.btn-outline:hover {
+  border: 1px solid #dc4f72;
+}
 
 /* header  */
 /* -------------- */
 /* CAROUSEL */
 #carousel { 
-  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)), url('../img/banner.jpg');
+  background: linear-gradient(to right, #1a2629, rgba(255, 255, 255, 0.92)), url(https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/banner.jpg);
   background-size: cover;
   /* background-repeat: no-repeat, no-repeat, no-repeat; */
   background-position: center;
@@ -133,13 +139,15 @@ header .navbar-toggler-icon{
 #carousel .content__left h3 {
   font-size: 2.5rem;
   font-weight: 700;
+  color: white;
+
 }
 
 #carousel .content__left p {
   padding-right: 150px;
   font-size: 1.2rem;
   font-weight: 500;
-  color: var(--text-color);
+  color: #b3b1b1;
 }
 
 /* CAROUSEL */
