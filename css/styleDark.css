@@ -1248,7 +1248,6 @@ header .navbar-toggler-icon{
   margin: 0 auto;
 }
 
-<<<<<<< HEAD
 .comment__content .container .comment__content-top .sub-title {
   font-size: 16px;
   font-weight: bold;
@@ -1265,31 +1264,12 @@ header .navbar-toggler-icon{
 .comment__content .container .comment__content-top .description {
   font-size: 16px;
   font-weight: 400;
-=======
-.comment__title p:first-of-type {
-  color: #dc4f72;
-  font-weight: 700;
-  margin-bottom: 5px;
-  
-}
-
-.comment__title h2 {
-  font-size: 44px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: white;
-}
-
-.comment__title p:last-of-type {
-  color: #b7b7b7;
->>>>>>> aee43fc2b873388e8dd55008d261df72b8c15469
 }
 
 .comment__content .container .comment__content-bottom .owl-carousel .item .slider-info {
   max-width: 95%;
   margin: 0 auto;
   padding: 2rem;
-<<<<<<< HEAD
   display: flex;
   grid-gap: 50px;
   background-color: var(--whitecolor);
@@ -1305,16 +1285,6 @@ header .navbar-toggler-icon{
 .comment__content .container .comment__content-bottom .owl-carousel .item .slider-info .img-circle {
   width: 22%;
   height: 103px;
-=======
-  grid-template-columns: auto 1fr;
-  grid-gap: 50px;
-  background-color: #131212;
-  border-radius: 5px;
-}
-
-.comment__img {
-  height: 100px;
->>>>>>> aee43fc2b873388e8dd55008d261df72b8c15469
   display: inline-block;
   overflow: hidden;
   background: #f3f6f9;
@@ -1387,62 +1357,11 @@ header .navbar-toggler-icon{
 .comment__content .container .comment__content-bottom .owl-carousel .item .slider-info .message p {
   font-size: 18px;
   line-height: 26px;
-<<<<<<< HEAD
   font-weight: bold;
-=======
-  color: rgb(255, 255, 255); 
->>>>>>> aee43fc2b873388e8dd55008d261df72b8c15469
 }
 
 .comment__content .container .comment__content-bottom .owl-carousel .item .slider-info .message .name h4 {
   font-size: 18px;
-<<<<<<< HEAD
-=======
-  color: rgb(215, 33, 109);
-  font-weight: 400; 
-}
-
-.isabella p {
-  font-size: 13px;
-  color: grey; 
-}
-
-.comment__contact {
-  display: flex !important;
-}
-
-.slick-dots li.slick-active button::before {
-  color:#dc305e;
-}
-
-
-/* COMMENT */
-/* -------------- */
-/* GET STARTED */
-#getStarted {
-  background-color: #000;
-}
-.getStarted__text{
-  text-align: center;
-  padding: 30px 180px;
-}
-
-.getStarted__text h2{
-  font-size: 44px;
-  color: white;
-} 
-.getStarted__text p{
-  color: #b7b7b7;
-  font-size: 16px;
-}
-.getStarted__button {
-  text-align: center;
-  padding-bottom: 45px;
-}
-.getStarted__button .button__op {
-  padding: 15px 30px;
-  background-color: rgb(12, 12, 12);
->>>>>>> aee43fc2b873388e8dd55008d261df72b8c15469
   color: #dc4f72;
   font-weight: 400;
 }
@@ -1452,7 +1371,6 @@ header .navbar-toggler-icon{
   color: var(--text-color);
 }
 
-<<<<<<< HEAD
 .comment__content .container .comment__content-bottom .carousel-homepage .owl-dots .owl-dot span {
   width: 40px;
   height: 5px;
@@ -1463,13 +1381,6 @@ header .navbar-toggler-icon{
   transition: opacity 0.2s ease;
   border-radius: 0;
   position: relative;
-=======
-/* GET STARTED */
-/* -------------- */
-/* FOOTER */
-#footer {
-  background-color: #191c1d;
->>>>>>> aee43fc2b873388e8dd55008d261df72b8c15469
 }
 
 .comment__content .container .comment__content-bottom .carousel-homepage .owl-dots .active span {
@@ -1494,7 +1405,6 @@ header .navbar-toggler-icon{
   max-width: 750px;
   margin: 0 auto;
 }
-<<<<<<< HEAD
 
 .ready__content .container .ready__content-top .title {
   font-size: 45px;
@@ -1505,61 +1415,6 @@ header .navbar-toggler-icon{
 .ready__content .container .ready__content-top .description {
   font-size: 16px;
   font-weight: 400;
-=======
-.service h2 {
-  color: white;
-  font-size: 22px;
-  margin-bottom: 20px;
-}
-.service ul {
-  line-height: 35px;
-  color: grey;
-  margin: 0;
-  padding: 0;
-}
-.service ul li:hover {
-  color: #e1718d;
-  cursor: pointer;
-}
-.service__right__text h2 {
-  font-size: 20px;
-  color: white;
-}
-.service__right__address{
-  background-color: rgb(10, 10, 10);
-  padding: 20px 25px;
-}
-.service__right__address h2 {
-  font-size: 20px;
-  font-weight: 350;
-  padding-bottom: 18px;
-  padding-top: 10px;
-  color: white;
-}
-.service__right__address p{
-  font-size: 16px;
-  padding-top: 15px;
-  color: grey;
-}
-.service__right__address form {
-  
-  display: flex;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 60px 0 rgb(0, 0, 0, 0.1);
-}
-.service__right__address input {
-  padding: 12px 20px;
-  font-size: 16px;
-  font-weight: 400;
-  color: rgb(15, 15, 15);
-  background: #191c1d;
-  border-radius: 0.5rem 0 0 0.5rem;
-  border: 1px solid #080808;
-  outline: none;
-  transition: all .5s;
-  flex: 1 1 auto;
-  border-radius: 5px;
->>>>>>> aee43fc2b873388e8dd55008d261df72b8c15469
 }
 
 .ready__content .container .ready__content-bottom .btn-contact {
@@ -1588,43 +1443,8 @@ header .navbar-toggler-icon{
 
 .ready__content .container .ready__content-bottom .left:hover {
   background-color: #dc4f72;
-<<<<<<< HEAD
   color: #fff;
   transition: all 0.3s;
-=======
-  border-color: transparent;
-  transition: all 0.5s;
-  border-radius: 5px;
-  color: white;
-  cursor: pointer;
-  margin-left: 10px;
-}
-.footer__masterwork {
-  padding-bottom: 30px;
-}
-.masterwork__left {
-  color: grey;
-}
-.masterwork__left a{
-  color: white;
-  transition: all 0.5s;
-}
-.masterwork__left a:hover{
-  text-decoration: none;
-  color: #dc559b;
-}
-.masterwork__content {
-  display: flex;
-  justify-content: space-between;
-}
-.masterwork__right i {
-  margin-right: 25px;
-  font-size: 16px;
-  color: white;
-}
-.masterwork__right i:hover {
-  color:#dc559b;
->>>>>>> aee43fc2b873388e8dd55008d261df72b8c15469
 }
 
 .ready__content .container .ready__content-bottom .right {
